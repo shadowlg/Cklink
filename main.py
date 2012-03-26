@@ -7,7 +7,7 @@ app.config.from_pyfile('cklink.cfg')
 def index():
     return render_template('index.html')
 
-
+#========
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
